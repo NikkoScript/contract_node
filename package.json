@@ -1,0 +1,19 @@
+{
+  "name": "contract_node",
+  "version": "1.0.0",
+  "description": "Check request's properties to only allow request with allowed properties",
+  "main": "contract.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test"
+  },
+  "keywords": [
+    "contract",
+    "nodejs"
+  ],
+  "author": "NikkoScript",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "2.4.*",
+    "should": "8.3.*"
+  }
+}

@@ -5,25 +5,29 @@ That what this module do. Check the name of your properties and only that.
 
 ## Code Example
 Contract contructor:
-''''javascript
+````javascript
 //@Param mandatory Array(String) mandatory parameter to fullfill the contract
 //@Param optionnal Array(String) parameter can be pass but not needed to fullfill the contract
 Contract(mandatory,optionnal)
-''''
+````
 
 Give one object given by the client to fullfill the contract
-'//@Param Object Object request send by the client to fullfild the contract
-contract.params(Object)'
+````javascript
+//@Param Object Object request send by the client to fullfild the contract
+contract.params(Object)
+````
 
 End the contract:
-'contract.end()'
-
+````javascript
+contract.end()
+````
 Get the state of the contract ( false : invalid, true : valid )
-'contract.valid()'
-
+````javascript
+contract.valid()
+````
 #Code Sample
-
-'var mycontract= new Contract(["id","name"])
+````javascript
+var mycontract= new Contract(["id","name"])
 var request={ id : "a00000"
               name : "John"
             }
@@ -45,8 +49,8 @@ if(mycontract.params(newrequest).end().valid()){
 var mynewcontract= new Contract(["id","name"])
 if(mynewcontract.params(newrequest).end().valid()){
   // You can update your databse now
-}'
-
+}
+````
 
 ## Motivation
 
